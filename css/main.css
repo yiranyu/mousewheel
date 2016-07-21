@@ -1,0 +1,159 @@
+/* 样式初始化 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+/* h1, h2, h3, h4, h5, h6{ font-size:100%; } */
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; color: #000;}
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; } 
+/* 样式初始化结束 */
+
+body,header,footer,p,div,section,article{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}   
+body{
+	height: 100%;
+	overflow: hidden;
+}
+em{
+	font-size: 20px;
+	font-weight: bold;
+}
+header{
+	width: 100%;
+	height: 80px;
+	padding: 10px;
+	background-color: #f4f4f4;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	padding-top: 10px;
+	background-color: #f8f8f8;
+	border-top: 1px solid #CCC9C9;
+	text-align: center;
+}
+footer a{
+    font-size: 12px;
+    color: #666;
+}
+#nav{
+	position: fixed;
+	top: 35%;
+    right: 0;
+    width: 50px;
+}
+#nav a{
+	position: relative;
+    display: block;
+    margin-top: 20px;
+    width: 10px;
+    height: 10px;
+    background: #B4B9BB;
+    border-radius: 50%;
+}
+#nav a:hover{
+    background: #29CEE8;
+}
+#nav .a-selected{
+	background: #29CEE8;
+}
+#nav span {
+	visibility: hidden;
+    position: absolute;
+    font-size: 12px;
+    top: 0;
+    line-height: 10px;
+    right: 100%;
+    width: 100px;
+    padding-right: 8px;
+    text-align: right;
+	color: #676767;
+	transition: visibility 200ms ease;
+	-webkit-transition: visibility 200ms ease; /* Safari 和 Chrome */
+}
+#nav .span-selected{
+	visibility: visible;
+}	
+#main{
+	width: 100%;
+ 	height: 100%;
+	padding-right: 50px;
+}
+#main section{
+	position: relative;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	transition: margin 1.6s ease;
+	-webkit-transition: margin 1.6s ease;
+}
+#main section.selected{
+	width: 1000px;
+	height: 500px;
+	margin: 100px auto 100px auto;
+}
+@keyframes enter{
+	from{width: 200px;}
+	to{width: 1000px;}
+}
+
+@-webkit-keyframes enter{
+	from{width: 200px;}
+	to{width: 1000px;}
+}
+#home{
+	text-align: center;
+	animation: enter 2s 1;
+	-webkit-animation: enter 2s 1;
+}
+
+#home img{
+	width: 100px;
+    height: 100px;
+    border-radius: 50%;
+	margin-bottom: 20px;
+}
+#home q{
+	margin-top: 20px;
+	font-size: 20px;
+    font-weight: bold;
+}
+.home-box{
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 2px solid #d7d7d7;
+}
+.title{
+	font-size: 23px;
+	padding: 10px 0;
+}
+#main section h3:after {
+    content: "";
+    display: block;
+    width: 92px;
+    height: 3px;
+    background-color: #8dc63f;
+    margin: 16px 0;
+}
+.info-box{
+	margin: 20px;
+}
+.home-box p,.info-box p{
+	width: 260px;
+	margin: 15px auto 0 auto;
+	font-size: 16px;
+	color: #6b6f78;
+}
