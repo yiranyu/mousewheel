@@ -26,4 +26,4 @@ HTML DOM Element对象的nextSibling 属性和previousSibling 属性可以获取
 需要注意的是高级浏览器下会识别出文本节点（/n也包含在内），为了正常获取到我们所需要的节点，可以使用nodeType判断。适应ie8以下的
 兼容写法为：
 
-    var ulEl = obj.nextElementSibling||obj.nextSibling。
+    var ulEl = obj.nextElementSibling||obj.nextSibling;
