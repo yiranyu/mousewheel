@@ -20,7 +20,7 @@
 		},false);
 		
 		/* aside链接点击事件 */
-		aset[i].addEventListener("click",function(){
+		aset[i].addEventListener("click",function(event){
 			event.preventDefault();
 			//重置
 			reset();
@@ -36,9 +36,9 @@
 	}
 	
 	/* 鼠标滚动切换 */
-	if(window.addEventListener){  
-		window.addEventListener("DOMMouseScroll",wheel,false);  
-	}  
+ 
+	window.addEventListener("DOMMouseScroll",wheel,false);  
+
 	window.onmousewheel=wheel;
 	function wheel(event){  
 		event=event||window.event;
