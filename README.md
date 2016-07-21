@@ -12,13 +12,13 @@
 	
 mousewheel事件对应的event对象包含鼠标事件的信息，我们主要用到的是wheelDelta属性：鼠标向上滚动时wheelDelta为正，是120的倍数，向下滚动时wheelDelta为负数，是-120的倍数。DOMMouseScroll事件有关鼠标滚轮的信息保存在detail属性中，属性值为3的倍数，向上为正向下为负。
   
-    event=event||window.event;
-  		var delta=0;
-  		if(event.wheelDelta){
-  			delta=event.wheelDelta/120;
-  		}else{
-  			delta=event.detail/3;
-  		}
+	event=event||window.event;
+	var delta=0;
+	if(event.wheelDelta){
+	    delta=event.wheelDelta/120;
+	}else{
+	    delta=event.detail/3;
+	}
 		
 ###其它
 HTML DOM Element对象的nextSibling 属性和previousSibling 属性可以获取当前元素的同胞节点，被返回的节点以 Node 对象的形式返回，如果没有则返回null。
